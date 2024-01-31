@@ -6,21 +6,45 @@
     box-sizing: border-box;
 }
 
-header {
-
-    display: flex;
-    background-color: white;
-    justify-content: space-around;
-}
-
+/*Largeur maximale de la page à 1440px */
 body {
-padding: 30px; 
-    margin-right: 50px;
-    background-color: gray;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
 
-.navbar a {
-
-    margin-left: 50px;
-    background-color: aqua;
+/*Inside header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    background-color: grey;
 }
+
+/*Taille du logo*/
+header img {
+    width: 61.09px;
+    height: 19px;
+}
+
+/*Couleur du wording menu*/
+header a {
+    color: black;
+}
+
+/*Hover wording effect + Bordure-top bleue au survol*/
+header a:hover {
+    color: #0065FC;
+    text-decoration: underline;
+    text-decoration: overline 2px;
+}
+
+/*Reset de la font de la main-recherche*/
+.main-recherche h4 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: inherit;
+    color: inherit;
+  }
