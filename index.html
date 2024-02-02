@@ -16,37 +16,48 @@
 
 
 <body>
-            <!-- Le logo & la navbar=(Hébergements & Activités)  -->
+    <!-- Le logo & la navbar (Hébergements & Activités) -->
     <header class="header">
                     <img src="images/logo/Booki.png" class="logo" alt="Booki"/>
                     
                         <nav class="navbar">
-                                    <a href="#hebergement">Hébergement</a>
+                                    <a href="#hebergement">Hébergements</a>
                                     <a href="#activite">Activités</a>
                         </nav>
     </header>
 
-            <!-- Paragraphe | Formulaire de recherche & Filtres | Texte d'informations  -->
-    <main class="main">
-        <section>
+    <!-- Paragraphe + Formulaire de recherche + Filtres = Texte d'informations -->
+    <section class="info-group">
                     <div class="main-recherche">
                     <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                     <h4>En plein centre-ville ou en pleine nature</h4>
 
-                    <div class="search-bar">
-                    </div>       
+                    <!-- Formulaire de recherche icon/text/submit -->
+                    <form action="#" method="get">
+                        <div class="input-with-icon">
+                            <span class="icon"> <i class="fas fa-map-marker-alt"></i></span>
+                            <input type="text" name="ville" value="Marseille, France" readwrite>
+                            <input type="submit" value="Rechercher">
+                    </form>       
 
+                     <!-- Filters -->
                     <div class="conteneur-filter">
-                        <a href="#">Économique</a>
-                        <a href="#">Familial</a>
-                        <a href="#">Romantique</a> 
-                        <a href="#">Nos pépites</a>
+                        <button class="button-with-icon"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                        <button class="button-with-icon"><i class="fa-solid fa-person"></i> Familial</button>
+                        <button class="button-with-icon"><i class="fa-solid fa-heart"></i> Romantique</button>
+                        <button class="button-with-icon"><i class="fa-solid fa-fire"></i> Nos pépites</button>
                     </div>
 
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                     <!-- Phrase d'information -->
+                    <p>
+                        <span class="icon-with-text">
+                        <i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</span>
+                    </p>
+        </section>
 
-                <!-- Bloc 6 photos & Column 3 photos  -->
-                <article> 
+    <!-- Bloc_card body = Hébergements à Marseille + Les plus populaires -->
+    <article>  
+         <section>
                     <h2 id="hebergement">Hébergements à Marseille</h2>
                     <div class="conteneur-row">
                         <a href="#">Hôtel du port<br>Nuit à partir de 52€</a>
@@ -56,26 +67,93 @@
                         <a href="#">Auberge La Canebière<br>Nuit à partir de 25€</a>
                         <a href="#">Auberge Le Panier <br>Nuit à partir de 23€</a>
 
-                    <h2 id="activite">Activités à Marseille</h2>
-                    <div class="conteneur-column">
-                        <a href="#">Hôtel Le soleil du matin<br>Nuit à partir de 25€</a>
-                        <a href="#">Chambres d'hôtes au coeur de l'eau <br>Nuit à partir de 71€</a>
-                        <a href="#">Hôtel Bleu et Blanc <br>Nuit à partir de 68€</a>   
-                 </article>
+                    <div class="hebergements-and-populaires">
+                        <section class="hebergements"></section>
 
-
-                <!-- Bloc 4 row (img + txt) --> 
-                <article>
-                    <div class="conteneur-4x4">
-                        <a href="#">Vieux-Port<img src="">
-                        <a href="#">Fort de Pormègues<img src="">
-                        <a href="#">Parc national des Calanques<img src="">
-                        <a href="#">Notre-Dame-de-la-Garde<img src="">
-                </article>
+                    <section class="populaires">
+                        <div class="populaires-title">
+                            <h2 class="section-title">Les plus populaires</h2>
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </div>  
         </section>
-    </main>
+                       
+                    <!-- Right-bloc = Les plus populaires -->
+                    <div class="populaires-cards">
 
-                <!-- Footer / Bas de page  -->   
+                    <!-- Inside the Right-bloc = 1.Hôtel Le soleil du matin -->
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                        <!-- Inside the Right-bloc = 2.Chambres d’hôtes Au cœur de l’eau -->
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                    <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <!-- Inside the Right-bloc = 3.Hôtel Bleu et Blanc -->
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                                    <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+    </article>
+
+    <!-- Bloc_cards footer = Activités à Marseille -->
+    <article>
+                id="activite">Activités à Marseille</h2>
+                <div class="conteneur-column">
+                    <a href="#">Hôtel Le soleil du matin<br>Nuit à partir de 25€</a>
+                    <a href="#">Chambres d'hôtes au coeur de l'eau <br>Nuit à partir de 71€</a>
+                    <a href="#">Hôtel Bleu et Blanc <br>Nuit à partir de 68€</a>   
+    </article>
+
+    <!-- Footer / Bas de page -->   
     <footer>
                 <div class="container-footer">
                         <h4>À propos</h4>
@@ -97,5 +175,3 @@
                             <li><a href="#">Nous contacter</a></li>
                         </ul>
     </footer>
-</body>
-</html>
