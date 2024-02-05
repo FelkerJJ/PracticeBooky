@@ -47,69 +47,63 @@ header a:hover {
     font-weight: inherit;
     margin: inherit;
     color: inherit;
-  }
+}
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+/*Bloc "Hébergements à Marseille + Les plus populaires*/
+.hebergementsandpopulaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+/*Bloc "Hébergements à Marseille + Les plus populaires*/
+.hebergementsandpopulaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+/*Bloc "Hébergements à Marseille*/
+.hebergements-marseille {
+    background-color: grey;
+    height: 420px;
+    padding: 20px;
+    margin-right: 20px;
+    display: flex;
 }
 
-/****** Populaires ***********/
+/*Bloc "Les plus populaires"*/
 .populaires {
-    width: 32%;
+    background-color: yellow;
 }
 
-.populaires-title {
+/*Espace du texte recherche*/
+.main-recherche {
+    margin: 10px;
+}
+
+/*Marseille + button search*/
+.input-with-icon {
+    margin: 20px;
+}
+
+/*Bloc Filtres*/
+.conteneur-filter {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    align-items: baseline;
+    align-items: stretch;
+    }
 
-.populaires-cards .card {
+/*Footer*/
+.container-footer {
+
+    background-color: #F2F2F2;
     display: flex;
-    margin-top: 33px;
+    margin: auto;
+    justify-content: space-around
 }
 
-.populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+/*L'alignement du footer au centre (à voir si on peux pas refacto)*/
+.center-content {
+    text-align: center;
 }
-
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
-
-  
