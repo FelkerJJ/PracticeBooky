@@ -33,10 +33,11 @@
 
 /**** 1.Le logo & la navbar (Hébergements & Activités) ****/
 .header {
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 /*Taille du logo + Placement*/
@@ -46,21 +47,39 @@
 }
 
 /*Couleur du wording menu + Marge du menu*/
-.header a {
-    color: black;
-    margin-right: 60px;
+.header .navbar {
     height: 100%;
+    display: flex;
 }
 
 /*Hover wording effect + Bordure-top bleue au survol*/
-.header a:hover {
-    color: #0065FC;
-    text-decoration: underline;
-    text-decoration: overline 2px;
+.header .navbar span {
+    margin-right: 60px;
+    height: 100%;
+    color: 0065FC;
 }
 
+/*Hover wording effect + Bordure-top bleue au survol*/
+.header .navbar span:hover {
+    color: #0065FC;
+    border-top: 2px solid blue;
+}
+
+/*Hover wording effect + Bordure-top bleue au survol*/
+.header .navbar a {
+    color: black ;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*Couleur black du wording*/
+.header .navbar a:hover {
+    color: blue;
+}
 /**** 2.Paragraphe + Formulaire de recherche + Filtres = Texte d'informations ****/
-.info-group {rey
+.info-group {
     width: 1340px;
     height: 281px;
     gap: 35px;
@@ -162,8 +181,9 @@
     background-color: white;
     color: black; /* Couleur du texte du bouton */
     border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
 }
 
 /*Icone Économique*/
@@ -171,6 +191,7 @@
         margin-right: 10px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
         margin-left: 10px;
         color: #0065FC;
+        font-size: 22px;
 }
 
 /*Icone Familial*/
@@ -180,14 +201,16 @@
     background-color: white;
     color: black; /* Couleur du texte du bouton */
     border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
 }
 
 /*Icone Familial*/
 .button-with-icon2 i {
     margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
     color: #0065FC;
+    font-size: 22px;
 }
 
 /*Icone Romantique*/
@@ -197,15 +220,16 @@
     background-color: white;
     color: black; /* Couleur du texte du bouton */
     border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 20px;
-    margin-left: 20px;
-
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
 }
 
 /*Icone Romantique*/
 .button-with-icon3 i {
     margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
     color: #0065FC;
+    font-size: 22px;
 }
 
 /*Icone "Nos pépites" */
@@ -215,14 +239,16 @@
     background-color: white;
     color: black; /* Couleur du texte du bouton */
     border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
 }
 
 /*Icone "Nos pépites" */
 .button-with-icon4 i {
     margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
     color: #0065FC;
+    font-size: 22px;
 }
 
 /*Icone d'information + phrase d'informations */
@@ -232,6 +258,10 @@
 /*Icone d'information*/ 
 .icon-with-text .fas {
     margin-right: 10px; 
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 /*3.Hébergements à Marseille & Les plus populaires */
@@ -367,4 +397,53 @@
 /*Titre "Activités à Marseille" */
 .activite-container {
     padding-top: 40px;
+}
+
+/* 5.Footer / Bas de page */ 
+
+.container-footer {
+    width: 1,440px;
+    height: 163px;
+    display: flex;
+}
+
+.apropos {
+    width: 446.67px;
+    height: 163px;
+    padding: 20px;
+    background-color: #F2F2F2;    
+}
+
+.nos-hebergements {
+    width: 446.67px;
+    height: 163px;
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+
+.assistance {
+    width: 446.67px;
+    height: 163px;
+    padding: 20px;
+    gap: 15px; 
+    background-color: #F2F2F2;
+}
+
+.container-footer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.container-footer p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 2.5;
 }
