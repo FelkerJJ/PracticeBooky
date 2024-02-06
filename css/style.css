@@ -251,17 +251,44 @@
     font-size: 22px;
 }
 
-/*Icone d'information + phrase d'informations */
-.icon-with-text {
-    margin-right: 10px;
+/* Phrase d'information */
+.icon-container {
+    width: 100%;
+    margin-left: 10px;
+    align-items: baseline;
 }
-/*Icone d'information*/ 
-.icon-with-text .fas {
-    margin-right: 10px; 
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
+/* Phrase d'information */
+.icon-container {
+    position: relative; /* Permet d'ajouter des éléments positionnés par rapport à celui-ci */
+    display: inline-block; /* Garantit que les éléments s'alignent correctement */
+}
+
+/* Phrase d'information */
+.icon-container .fa-solid {
+    padding-right: 2%;
+    color: #0065FC;
+    top: 2%;
+    left: 10px;
+    font-size: 70%;
+    margin-left: 1px;
+}
+
+/* Phrase d'information */
+.circle {
+    position: absolute;
+    bottom: -4px;
+    left: -9px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* Phrase d'information */
+.icon-container span {
+    position: absolute;
+    top: 10%;
 }
 
 /*3.Hébergements à Marseille & Les plus populaires */
@@ -301,7 +328,13 @@
 
 /*Titre du bloc "Hébergements à Marseille"*/ 
 .section-title {
-    margin: 30px;
+    margin: 40px;
+}
+
+.section-titleom {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding: 1%;
 }
 
 /*Style pour les blocs dans "Hébergements à Marseille"*/ 
@@ -367,14 +400,15 @@
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     background-color: white;
+    object-fit: cover; /*pour bien mettre le contenue */
 }
 
-/*Style pour les autres étoiles bleus"*/
+/*Style pour les cards"*/
 .card-vertical {
     display: inline-block;
     margin-bottom: 40px;
-    margin-right: 20px;
-    /* Ajoutez d'autres styles selon vos besoins */
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 /*Texte des cartes*/
@@ -387,24 +421,23 @@
     border-bottom-left-radius: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
+    font-size: 90%;
+    margin-top: -2%;
 }
 
-/*Titre "Activités à Marseille" */
-.activite-container {
-    padding-top: 40px;
+/*Enlève les tirets du <a> " */
+.activite-container a {
+    text-decoration: none; /* Pour supprimer les soulignements par défaut */
+
 }
 
 /* 5.Footer / Bas de page */ 
-
 .container-footer {
     width: 1,440px;
     height: 163px;
     display: flex;
+    padding-top: 2%;
 }
 
 .apropos {
