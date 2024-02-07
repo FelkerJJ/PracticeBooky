@@ -11,7 +11,6 @@
     width: 100%;
     margin: 0 auto; /* Centre la page horizontalement */
     background-color: white; /* Couleur de fond */
-
     /* Ajoute une marge blanche au-delà de la largeur maximale */
     box-sizing: border-box; 
 }
@@ -44,6 +43,7 @@
 .header img {
     width: 61.09px;
     height: 19px;
+    margin-top: 1%;
 }
 
 /*Couleur du wording menu + Marge du menu*/
@@ -56,7 +56,7 @@
 .header .navbar span {
     margin-right: 60px;
     height: 100%;
-    color: 0065FC;
+    color: #0065FC;
 }
 
 /*Hover wording effect + Bordure-top bleue au survol*/
@@ -176,7 +176,7 @@
 
 /*Icone Économique*/
 .button-with-icon1 {
-    border-radius: 15px; /* Ajustez la valeur selon vos préférences */
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
     padding: 10px 20px; /* Ajustez le padding selon vos besoins */
     background-color: white;
     color: black; /* Couleur du texte du bouton */
@@ -196,7 +196,7 @@
 
 /*Icone Familial*/
 .button-with-icon2 {
-    border-radius: 15px; /* Ajustez la valeur selon vos préférences */
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
     padding: 10px 20px; /* Ajustez le padding selon vos besoins */
     background-color: white;
     color: black; /* Couleur du texte du bouton */
@@ -215,7 +215,7 @@
 
 /*Icone Romantique*/
 .button-with-icon3 {
-    border-radius: 15px; /* Ajustez la valeur selon vos préférences */
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
     padding: 10px 20px; /* Ajustez le padding selon vos besoins */
     background-color: white;
     color: black; /* Couleur du texte du bouton */
@@ -234,7 +234,7 @@
 
 /*Icone "Nos pépites" */
 .button-with-icon4 {
-    border-radius: 15px; /* Ajustez la valeur selon vos préférences */
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
     padding: 10px 20px; /* Ajustez le padding selon vos besoins */
     background-color: white;
     color: black; /* Couleur du texte du bouton */
@@ -265,7 +265,7 @@
 
 /* Phrase d'information */
 .icon-container .fa-solid {
-    padding-right: 2%;
+    padding-right: 1.55%;
     color: #0065FC;
     top: 2%;
     left: 10px;
@@ -291,104 +291,163 @@
     top: 10%;
 }
 
-/*3.Hébergements à Marseille & Les plus populaires */
-.hebergementsandpopulaires {
-    width: 1340px;
-    height: 614px;
-    background-color: white;
-    gap: 10px;
-    display: flex; 
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
 }
 
-/*Taille img hebergements*/ 
-.hebergementsandpopulaires .hebergements img {
-    width: 250.33px;
-    height: 124px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: white;
+.fa-solid {
+    color: var(--main-color);
 }
 
-/*Taille img populaires*/ 
-.hebergementsandpopulaires .populaires img {
-    width: 123px;
-    height: 146px;
-    border-radius: 20px, 0px, 0px, 20px;
-    border: 5px, 0px, 5px, 5px;
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 50px;
+    margin-left: -55px;
 }
 
-/*Bloc Hébergements à Marseille*/ 
-.hebergements {
-    width: 871px;
-    height: 614px;
-    background-color: #F2F2F2;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/*Titre du bloc "Hébergements à Marseille"*/ 
 .section-title {
-    margin: 40px;
+    margin: 0;
+    font-size: 22px;
 }
 
-.section-titleom {
-    margin-top: 4%;
-    margin-bottom: 2%;
-    padding: 1%;
-}
-
-/*Style pour les blocs dans "Hébergements à Marseille"*/ 
-.images_baniere {
-    width: 260px;
-    height: 220px;
-    padding: 0px, 0px, 15px, 0px;
-    border-top-left-radius: 20px;    
-    gap: 4px;
+.card {
     background-color: white;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    position: absolute;
-    color: black;
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-top: 5px;
-    margin-left: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-/*Style pour l'étoile gris"*/ 
-.hebergements .images_baniere .card-rating .fa-xs5 {
-    color: #F2F2F2;
+.card img {
+    object-fit: cover;
 }
 
-/*Style pour les autres étoiles bleus"*/
-.hebergements .images_baniere .card-rating {
-    color: #0065FC;
-    margin: 2px;
-    padding-left: 2px;
-    padding-top: 2px;
+.card-title {
+    font-size: 16px;
 }
 
-/*Style pour les autres étoiles bleus"*/
-.hebergements .images_baniere h3 {
-    margin: 5px;
+.euro {
+    font-weight: 700;
 }
 
-/*Style pour les autres étoiles bleus"*/
-.hebergements .images_baniere p {
-    margin: 5px;
-    padding-top: 5px;
+.neutral-star {
+    color: var(--main-bg-color)
 }
 
-.images_card {
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
 
-    width: 429px;
-    height: 614px;
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
     padding: 30px;
-    border-radius: 15px;
-    gap: 30px;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
 }
 
 /* 4.Activités à Marseille / Taille img activités*/ 
@@ -401,6 +460,7 @@
     border-top-left-radius: 15px;
     background-color: white;
     object-fit: cover; /*pour bien mettre le contenue */
+    margin-top: 5%;
 }
 
 /*Style pour les cards"*/
@@ -409,6 +469,7 @@
     margin-bottom: 40px;
     margin-right: 1%;
     margin-left: 1%;
+    padding-top: 1%;
 }
 
 /*Texte des cartes*/
@@ -429,15 +490,18 @@
 /*Enlève les tirets du <a> " */
 .activite-container a {
     text-decoration: none; /* Pour supprimer les soulignements par défaut */
+}
 
+.activite-container .section-title {
+    margin-left: 1.2%; /* Décale le titre vers la droite, aligné avec le bloc */
 }
 
 /* 5.Footer / Bas de page */ 
 .container-footer {
-    width: 1,440px;
     height: 163px;
     display: flex;
-    padding-top: 2%;
+    padding-top: 1.5%;
+    margin-left: -7px;
 }
 
 .apropos {
@@ -472,7 +536,6 @@
 }
 
 .container-footer p {
-    font-family: Raleway;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;

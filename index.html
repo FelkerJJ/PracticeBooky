@@ -2,17 +2,17 @@
 <html lang="fr">
 
 <head>
-    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Trailer/92.3.2947.22';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site d'agence de voyage">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 
 <body>
     <div class="container">
@@ -58,47 +58,23 @@
                         </div>
         </section>
 
-        <!-- 3.Hébergements à Marseille & Les plus populaires -->
-        <div class="hebergementsandpopulaires">  
-            <section class="hebergements">   
-                                <div class="hebergements-title">
-                                <h2 class="section-title">Hébergements à Marseille</h2>
-        </div>     
+    <!-- 3.Hébergements à Marseille & Les plus populaires -->
+    <div class="main-container">
+        <header></header>
+        <main>
+            <div class="hebergements-and-populaires">
+                <section class="hebergements">
 
-                    <div class="conteneur-flex">
-                        <!-- 1.Hôtel du port -->
-                        <a href="#">
-                            <div class="images_baniere">
-                                <img src="images/hebergements/fred-kleber.jpg" alt=""> 
-                                <div class="banniere"> 
-                                    <h3>Hôtel du port</h3>
-                                    <p>
-                                        Nuit à partir de 52<b>€</b>
-                                    </p>
-                                    <div class="card-rating">
-                                        <i class="fa-xs1 fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs2 fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs3 fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs4 fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs5 fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    </div> 
-                                </div>
-                            </div>
-                        </a>
+                </section>
+                <section class="populaires">
+                    <div class="populaires-title">
+                        <h2 class="section-title">Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-            </section>
-
-            <!-- Les plus populaires -->
-            <section class="populaires">
-                                <div class="populaires-title">
-                                    <h2 class="section-title">Les plus populaires</h2>
-                                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                                </div>  
-
-                        <!-- 1.Hôtel Le soleil du matin -->
+                    <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="#">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -115,8 +91,6 @@
                                 </div>
                             </article>
                         </a>
-
-                        <!-- 2.Chambres d’hôtes Au cœur de l’eau -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -136,8 +110,6 @@
                                 </div>
                             </article>
                         </a>
-
-                        <!-- 3.Hôtel Bleu et Blanc -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -157,86 +129,88 @@
                                 </div>
                             </article>
                         </a>
-            </section> 
-        </div> 
-          
-        <!-- 4.Activités à Marseille -->
-        <article> 
-            <section class="activite-container">
-                                <div class="activites-title">
-                                <h2 class="section-titleom"><b>Activités à Marseille</b></h2>
-                                </div>  
-
-                        <!-- 1.Vieux-Port -->
-                        <a href="#">
-                            <article class="card-vertical">
-                                <img src="./images/activites/reno-laithienne.jpg" alt="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                    <h3 class="card-title">Vieux-Port</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>     
-
-                        <!-- 2.Fort de Pomègues -->
-                        <a href="#">
-                            <article class="card-vertical">
-                                <img src="./images/activites/paul-hermann.jpg" alt="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                    <h3 class="card-title">Fort de Pomègues</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>     
-                        
-                        <!-- 3.Parc national des Calanques -->
-                        <a href="#">
-                            <article class="card-vertical">
-                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Parc national des Calanques</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </a> 
-                        
-                        <!-- 4.Notre-Dame-de-la-Garde -->
-                        <a href="#">
-                            <article class="card-vertical">
-                                <img src="./images/activites/florian-wehde.jpg" alt="#">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>                         
-            </section>             
-        </article>
-
-        <!-- 5.Footer / Bas de page -->   
-        <footer>
-                    <div class="container-footer">
-                            <div class="apropos">
-                                <h4>À propos</h4>
-                                <p>Fonctionnement du site <br> Conditions générales<br>Données et confidentialité</p>
-                            </div>
-                            
-                            <div class="nos-hebergements">
-                                <h4>Nos hébergements</h4>
-                                <p>Charte qualité <br> Proposer votre hôtel</p>
-                            </div>
-
-                            <div class="assistance">
-                                <h4>Assistance</h4>
-                                <p>Centre d'aide <br>Nous contacter</p>
-                            </div>
                     </div>
-                            
-        </footer>
+                </section>
+            </div>
+        </main>
     </div>
+
+    <article> 
+        <section class="activite-container">
+                            <div class="activites-title">
+                            <h2 class="section-title"><b>Activités à Marseille</b></h2>
+                            </div>  
+
+                    <!-- 1.Vieux-Port -->
+                    <a href="#">
+                        <article class="card-vertical">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                <h3 class="card-title">Vieux-Port</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>     
+
+                    <!-- 2.Fort de Pomègues -->
+                    <a href="#">
+                        <article class="card-vertical">
+                            <img src="./images/activites/paul-hermann.jpg" alt="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>     
+                    
+                    <!-- 3.Parc national des Calanques -->
+                    <a href="#">
+                        <article class="card-vertical">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a> 
+                    
+                    <!-- 4.Notre-Dame-de-la-Garde -->
+                    <a href="#">
+                        <article class="card-vertical">
+                            <img src="./images/activites/florian-wehde.jpg" alt="#">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                        </article>
+                    </a>                         
+        </section>             
+    </article>
+
+    <!-- 5.Footer / Bas de page -->   
+    <footer>
+                <div class="container-footer">
+                        <div class="apropos">
+                            <h4>À propos</h4>
+                            <p>Fonctionnement du site <br> Conditions générales<br>Données et confidentialité</p>
+                        </div>
+                        
+                        <div class="nos-hebergements">
+                            <h4>Nos hébergements</h4>
+                            <p>Charte qualité <br> Proposer votre hôtel</p>
+                        </div>
+
+                        <div class="assistance">
+                            <h4>Assistance</h4>
+                            <p>Centre d'aide <br>Nous contacter</p>
+                        </div>
+                </div>
+                        
+    </footer>
 </body>
+
 </html>
