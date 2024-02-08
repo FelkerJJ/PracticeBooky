@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+/*Le bloc de base*/
 .container {
     max-width: 1440px; /* Largeur maximale */
     width: 100%;
@@ -30,6 +37,8 @@
     }
 }
 
+
+
 /**** 1.Le logo & la navbar (Hébergements & Activités) ****/
 .header {
     height: 50px;
@@ -41,9 +50,9 @@
 
 /*Taille du logo + Placement*/
 .header img {
-    width: 61.09px;
-    height: 19px;
-    margin-top: 1%;
+width: 61.09px;
+height: 19px;
+margin-top: 1%;
 }
 
 /*Couleur du wording menu + Marge du menu*/
@@ -74,10 +83,13 @@
     align-items: center;
 }
 
-/*Couleur black du wording*/
+/*Couleur bleu du hover*/
 .header .navbar a:hover {
     color: blue;
 }
+
+
+
 /**** 2.Paragraphe + Formulaire de recherche + Filtres = Texte d'informations ****/
 .info-group {
     width: 1340px;
@@ -86,8 +98,9 @@
 }
 
 /*Paragraphe première ligne*/
-.main-recherche h3 {
+.main-recherche h1 {
     margin-bottom: 5px;
+    font-size: 125%;
 }
 
 /*Paragraphe seconde ligne*/
@@ -97,7 +110,7 @@
     margin-bottom: 20px;;
 }
 
-/*Affichage Flex des 3 blocs*/
+/*Affichage Flex des 3 filtres*/
 .input-with-icon {
     display: flex;
 }
@@ -154,8 +167,6 @@
     text-align: center;
     align-content: space-around;
     border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-
-
 }
 
 /*Bloc Filtres*/
@@ -167,15 +178,15 @@
     margin-bottom: 30px;
 }
 
-/*Ligne Filtres*/
-.conteneur-filter h3 {
+    /*Ligne Filtres*/
+    .conteneur-filter h3 {
     display: flex;
     align-self: center;
     margin-right: 15px;
-}
+    }
 
-/*Icone Économique*/
-.button-with-icon1 {
+    /*Icone Économique*/
+    .button-with-icon1 {
     border-radius: 25px; /* Ajustez la valeur selon vos préférences */
     padding: 10px 20px; /* Ajustez le padding selon vos besoins */
     background-color: white;
@@ -184,123 +195,121 @@
     margin-right: 10px;
     margin-left: 10px;
     font-size: 17px;
-}
+    }
 
-/*Icone Économique*/
-.button-with-icon1 i {
-        margin-right: 10px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
+    /*Icone Économique*/
+    .button-with-icon1 i {
+    margin-right: 10px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
+    margin-left: 10px;
+    color: #0065FC;
+    font-size: 22px;
+    }
+
+    /*Icone Familial*/
+    .button-with-icon2 {
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
+    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+    background-color: white;
+    color: black; /* Couleur du texte du bouton */
+    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    }
+
+    /*Icone Familial*/
+    .button-with-icon2 i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
+    color: #0065FC;
+    font-size: 22px;
+    }
+
+    /*Icone Romantique*/
+    .button-with-icon3 {
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
+    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+    background-color: white;
+    color: black; /* Couleur du texte du bouton */
+    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    }
+
+    /*Icone Romantique*/
+    .button-with-icon3 i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
+    color: #0065FC;
+    font-size: 22px;
+    }
+
+    /*Icone "Nos pépites" */
+    .button-with-icon4 {
+    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
+    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+    background-color: white;
+    color: black; /* Couleur du texte du bouton */
+    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    }
+
+    /*Icone "Nos pépites" */
+    .button-with-icon4 i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
+    color: #0065FC;
+    font-size: 22px;
+    }
+
+        /* Phrase d'information */
+        .icon-container {
+        width: 100%;
         margin-left: 10px;
+        align-items: baseline;
+        }
+        /* Phrase d'information */
+        .icon-container {
+        position: relative; /* Permet d'ajouter des éléments positionnés par rapport à celui-ci */
+        display: inline-block; /* Garantit que les éléments s'alignent correctement */
+        }
+
+        /* Phrase d'information */
+        .icon-container .fa-solid {
+        padding-right: 1.55%;
         color: #0065FC;
-        font-size: 22px;
-}
+        top: 2%;
+        left: 10px;
+        font-size: 70%;
+        margin-left: 1px;
+        }
 
-/*Icone Familial*/
-.button-with-icon2 {
-    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
-    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
-    background-color: white;
-    color: black; /* Couleur du texte du bouton */
-    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 17px;
-}
+        /* Phrase d'information */
+        .circle {
+        position: absolute;
+        bottom: -4px;
+        left: -9px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #D9D9D9;
+        border-radius: 50%;
+        background-color: transparent;
+        }
 
-/*Icone Familial*/
-.button-with-icon2 i {
-    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
-    color: #0065FC;
-    font-size: 22px;
-}
+        /* On met bien la phrase aligné */
+        .icon-container span {
+        position: absolute;
+            top: 10%;
+        }
 
-/*Icone Romantique*/
-.button-with-icon3 {
-    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
-    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
-    background-color: white;
-    color: black; /* Couleur du texte du bouton */
-    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 17px;
-}
 
-/*Icone Romantique*/
-.button-with-icon3 i {
-    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
-    color: #0065FC;
-    font-size: 22px;
-}
 
-/*Icone "Nos pépites" */
-.button-with-icon4 {
-    border-radius: 25px; /* Ajustez la valeur selon vos préférences */
-    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
-    background-color: white;
-    color: black; /* Couleur du texte du bouton */
-    border: 2px solid #F2F2F2; /* Ajoute une bordure de 2 pixel solide grey */
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 17px;
-}
-
-/*Icone "Nos pépites" */
-.button-with-icon4 i {
-    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte, ajustez selon vos préférences */
-    color: #0065FC;
-    font-size: 22px;
-}
-
-/* Phrase d'information */
-.icon-container {
-    width: 100%;
-    margin-left: 10px;
-    align-items: baseline;
-}
-/* Phrase d'information */
-.icon-container {
-    position: relative; /* Permet d'ajouter des éléments positionnés par rapport à celui-ci */
-    display: inline-block; /* Garantit que les éléments s'alignent correctement */
-}
-
-/* Phrase d'information */
-.icon-container .fa-solid {
-    padding-right: 1.55%;
-    color: #0065FC;
-    top: 2%;
-    left: 10px;
-    font-size: 70%;
-    margin-left: 1px;
-}
-
-/* Phrase d'information */
-.circle {
-    position: absolute;
-    bottom: -4px;
-    left: -9px;
-    width: 24px;
-    height: 24px;
-    border: 1px solid #D9D9D9;
-    border-radius: 50%;
-    background-color: transparent;
-}
-
-/* Phrase d'information */
-.icon-container span {
-    position: absolute;
-    top: 10%;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
+/**** 3.Hébergements à Marseille & Les plus populaires ****/
 .fa-solid {
     color: var(--main-color);
 }
 
+/* Bloc "Hébergements à Marseille & Les plus populaires" */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -308,6 +317,7 @@
     margin-left: -55px;
 }
 
+/* Style du Bloc "Hébergements à Marseille & Les plus populaires" */
 a {
     color: inherit;
     text-decoration: none;
@@ -406,9 +416,6 @@ a {
     margin-bottom: 5px;
 }
 
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -451,17 +458,19 @@ a {
     /* ... */
 }
 
-/* 4.Activités à Marseille / Taille img activités*/ 
+
+
+/****  4.Activités à Marseille / Taille img activités ****/
 .card-vertical img {
-    width: 297.5px;
-    height: 380px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: white;
-    object-fit: cover; /*pour bien mettre le contenue */
-    margin-top: 5%;
+width: 297.5px;
+height: 380px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+background-color: white;
+object-fit: cover; /*pour bien mettre le contenue */
+margin-top: 5%;
 }
 
 /*Style pour les cards"*/
@@ -497,7 +506,9 @@ a {
     margin-left: 1.2%; /* Décale le titre vers la droite, aligné avec le bloc */
 }
 
-/* 5.Footer / Bas de page */ 
+
+
+/**** 5.Footer / Bas de page ****/ 
 .container-footer {
     height: 163px;
     display: flex;
