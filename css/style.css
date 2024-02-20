@@ -24,6 +24,7 @@
 
 
 
+
 /**** 1.Le logo & la navbar (Hébergements & Activités) ****/
 .header {
     height: 50px;
@@ -75,6 +76,7 @@ margin-top: 1%;
 
 
 
+
 /**** 2.Paragraphe + Formulaire de recherche + Filtres = Texte d'informations ****/
 .info-group {
     width: 1340px;
@@ -89,7 +91,7 @@ margin-top: 1%;
 }
 
 /*Paragraphe seconde ligne*/
-.main-recherche span {
+    .main-recherche span {
     display: flex;
     font-size: 12px;
     margin-bottom: 20px;;
@@ -290,6 +292,7 @@ margin-top: 1%;
 .fa-solid {
     color: var(--main-color);
 }
+
 
 
 
@@ -498,6 +501,7 @@ a {
 
 
 
+
 /****  4.Activités à Marseille / Taille img activités ****/
 .card-vertical img {
 width: 297.5px;
@@ -551,6 +555,7 @@ margin-top: 5%;
 
 
 
+
 /**** 5.Footer / Bas de page ****/ 
 .container-footer {
     height: 163px;
@@ -600,16 +605,25 @@ margin-top: 5%;
 
 
 
+
 /****** Media queries ***********/
-/* Limite la largeur du contenu à 1440px au-delà de la largeur maximale */
 @media only screen and (max-width: 1440px) {
     .main-container {
         width: 100%;
         max-width: 1440px;
         padding: 0px 40px;
         margin-left: 0px;
-        margin-top: 193px;
-    }
+        }
+
+        .header {
+            height: 50px;
+            display: flex;
+            margin-bottom: 30px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            font-size: 18px;
+        }
 
     .hebergements-cartes-gauche {
             display: flex;
@@ -634,7 +648,7 @@ margin-top: 5%;
         }
 }
 
-
+/* Medium devices (tablets, less/equal than 1323px) */
 @media (max-width: 1323px) {
     .activite-container {
         display: flex;
@@ -644,11 +658,7 @@ margin-top: 5%;
     }
 }
 
-.activite-container .hebergementaom {
-        margin-top: 2%;
-
-}
-
+/* Medium devices (tablets, less/equal than 1200px) */
 @media (max-width: 1200px) {
     .activite-container {
         width: 100%;
@@ -657,7 +667,6 @@ margin-top: 5%;
         align-items: center;
         }
 }
-
 
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -724,10 +733,25 @@ margin-top: 5%;
     .populaires-cards .cartes-subtitle {
         font-size: 13px;
     }
+
+    .populaires-title {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+    }
 }
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 40px;
+        margin-left: 0px;
+        margin-top: 215px;
+    }
+
     .container {
         width: 100%;
     }
@@ -751,13 +775,13 @@ margin-top: 5%;
 }
 
     .icon-container {
-        width: 100%;
-        margin-left: 10px;
-        align-items: baseline;
-        position: relative; /* Permet d'ajouter des éléments positionnés par rapport à celui-ci */
-        font-size: 12px;
-        display: inline-block; /* Garantit que les éléments s'alignent correctement */
-}
+            width: 100%;
+            margin-left: 18px;
+            align-items: baseline;
+            position: relative;
+            font-size: 14px;
+            display: inline-block;
+        }
 
     .conteneur-filter h3 {
 
@@ -808,8 +832,7 @@ margin-top: 5%;
         }   
 }
 
-
-
+/* Small devices (phones, less than 697px) */
 @media (max-width: 697px) {
 .apropos {
     width: 446.67px;
@@ -850,67 +873,7 @@ margin-top: 5%;
                 align-content: center;
             }
 
-}
-
-
-    /* Comportement spécial pour les écrans de moins de 490px de largeur */
-    @media (max-width: 600px) {
-
-        .header {
-            height: 60px;
-            display: flex;
-            margin-bottom: 50px;
-            margin-top: 10px;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            font-size: 20px;
-        }
-        .header img {
-            width: 103px;
-            margin: 10px;
-            height: auto;
-        }
-
-        .info-group .main-recherche h1 {
-            margin-bottom: 5px;
-            font-size: 14px;
-            text-align: start;
-            margin-left: 25px;
-        }
-
-        .hebergements {
-            width: 100%;
-            gap: 5px;
-        } 
-
-        .main-recherche span {
-            display: flex;
-            font-size: 10px;
-            margin-left: 25px;
-            } 
-
-        .info-group .icon {
-            display: none;
-        }
-
-        .input-with-icon {
-            display: flex;
-            margin: 30px;
-            font-size: 20px;
-        }
-
-        .input-with-icon {
-            display: flex;
-            margin: 30px;
-            font-size: 20px;
-        }
-
-        .hebergements-and-populaires {
-            padding-top: 30px;
-        }
 }  
-
 
 /* Comportement spécial pour les écrans de moins de 320px de largeur */
 @media only screen and (max-width: 320px) {
