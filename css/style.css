@@ -100,6 +100,8 @@ margin-top: 1%;
 /*Affichage Flex des 3 filtres*/
 .input-with-icon {
     display: flex;
+    position: relative;
+
 }
 
 /*Bloc de l'Icon de localisation*/
@@ -603,7 +605,9 @@ margin-top: 5%;
     line-height: 2.5;
 }
 
-
+.fa-magnifying-glass:before, .fa-search:before {
+    font-size: 0;
+}
 
 
 /****** Media queries ***********/
@@ -1035,6 +1039,7 @@ margin-top: 5%;
         margin-bottom: 5px;
         align-self: center;
     }
+
     .main-recherche span {
         display: flex;
         font-size: 16px;
@@ -1052,43 +1057,30 @@ margin-top: 5%;
 
     .header .navbar {
         display: flex;
-        width: 375px;
+        width: calc(100vw - 2px);
         justify-content: space-around;
         gap: 15px;
         border-bottom: 2px solid #ccc; /* Bordure par défaut */
         transition: border-color 0.3s; /* Ajouter une transition pour une animation fluide */
     }
 
+    .header .navbar span {
+        margin-right: 60px;
+        margin-bottom: 20px;
+        color: #0065FC;
+        display: flex;
+        flex-direction: row;
+        transition: border-color 0.3s;
+        justify-content: center;
+        margin-bottom: 5px; /* Compenser la bordure du conteneur */
+    }
+
     .header .navbar span:hover {
         color: #0065FC;
-        margin-bottom: 15px;
         border-top: none; /* Retirez la bordure dans le mode responsive */
         border-bottom: 2px solid blue;
-        width: calc(100vw - 2px); /* Soustraire la largeur de la bordure */    }
-    
-        .header .navbar span {
-            margin-right: 60px;
-            height: 100%;
-            color: #0065FC;
-            display: flex;
-            flex-direction: row;
-            transition: border-color 0.3s;
-            justify-content: center;
-            margin-bottom: -2px; /* Compenser la bordure du conteneur */
-
-        }
-        
-        .header .navbar span:hover,
-        .header .navbar span:active {
-            color: #0065FC; /* Couleur du texte en bleu */
-            border-bottom: 2px solid blue;
-            width: calc(100vw - 2px); /* Soustraire la largeur de la bordure */    
-            border-bottom-color: blue; /* Couleur de la bordure en bleu */
-        }
-    
-        .bouton-recherche {
-            text-indent: -9999px; /* Masque le texte */
-        }
+        width: calc(100vw - 2px); /* Soustraire la largeur de la bordure */    
+    }
 
         .hebergements {
             width: 375px;
@@ -1341,5 +1333,60 @@ margin-top: 5%;
             height: 175px;
             padding: 20px;
             background-color: #F2F2F2;
+        }
+
+        .bouton-recherche {
+            background-color: #0065FC;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 0%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 0%;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 30px;
+            height: 49px;
+            width: 49px;
+            font-size: 0; /* Masquer le texte */
+        }
+    
+        /* Afficher l'icône de recherche en format mobile */
+        .bouton-recherche::after {
+            content: "\f002"; /* Code Unicode de l'icône de recherche */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2px; /* Taille de l'icône */
+        }
+
+        .input-with-icon {
+            display: flex;
+            width: 350px;
+            margin-left: 6px;
+        }
+    
+        .input-with-icon .responsive-icon {
+            display: inline-block;
+            position: absolute;
+            right: 11px;
+            top: 25px;
+            transform: translateY(-50%);
+            color: white;
+        }
+    
+        .input-with-icon input[type="text"] {
+            padding-right: 30px; /* Ajustez la marge à droite pour éviter que le texte ne soit caché sous l'icône */
+        }
+
+        .fa-magnifying-glass:before, .fa-search:before {
+            content: "\f002";
+            font-size: 20px;
+            padding: 3px;
         }
 }
