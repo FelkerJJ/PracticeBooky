@@ -1058,30 +1058,25 @@ margin-top: 5%;
     .header .navbar {
         display: flex;
         width: calc(100vw - 2px);
-        justify-content: space-around;
-        gap: 15px;
-        border-bottom: 2px solid #ccc;
-        transition: border-color 0.3s;
         margin-top: -10px;
     }
 
     .header .navbar span {
-        margin-right: 60px;
         margin-bottom: 20px;
         color: #0065FC;
         display: flex;
+        width: 50%;
         flex-direction: row;
         transition: border-color 0.3s;
         justify-content: center;
-        margin-bottom: 5px; /* Compenser la bordure du conteneur */
+        margin-bottom: 5px;
+        border-bottom: 2px solid #ccc;
+        margin-right: 0px;
     }
 
     .header .navbar span:hover {
-        color: #0065FC;
         border-top: none;
         border-bottom: 2px solid blue;
-        width: calc(100vw - 2px);
-        margin-bottom: 20px;
     }
 
         .hebergements {
