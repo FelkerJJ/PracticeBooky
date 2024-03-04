@@ -1301,7 +1301,9 @@ a {
     }
 }
 
-@media screen and (max-width: 414px) {
+/* Pour le Samsung Galaxy S8 */
+@media only screen and (device-width: 360px) and (device-height: 740px) and (-webkit-device-pixel-ratio: 4) {
+
     .info-group {
         width: 375px;
         height: 300px;
@@ -1319,6 +1321,12 @@ a {
         display: flex;
         flex-direction: column;
         margin-left: 9px;
+    }
+
+    .header .navbar {
+        display: flex;
+        width: calc(109vw);
+        margin-top: -10px;
     }
 
 }
@@ -1351,22 +1359,27 @@ a {
         box-sizing: border-box;
         margin-left: 5px;
     }
-}
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: portrait) {
-    .info-group {
-        width: 375px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        margin-left: 4px;
-    }
-    
-    .header .navbar {
-        display: flex;
-        margin-top: -10px;
-    }
+        .hebergements-and-populaires section {
+            background-color: var(--main-bg-color);
+            padding: 30px;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .activite-container {
+            width: 375px;
+            height: 390px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: -15px;
+        }
 }
 
 /* Pour l'Iphone SE */
@@ -1413,4 +1426,63 @@ a {
         margin-top: 615px;
         margin-left: 15px;
     }
+
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        padding: 30px;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7px;
+    }
 }
+
+/* Pour l'iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .apropos {
+        width: 375px;
+        height: 175px;
+        padding: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .nos-hebergements {
+        width: 375px;
+        height: 140px;
+        padding: 20px;
+        background-color: #F2F2F2;
+        margin-left: 5px;
+        margin-bottom: -15px;
+    }
+
+    .assistance {
+        width: 375px;
+        height: 175px;
+        padding: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .container-footer {
+        height: 128px;
+        width: 388px;
+        display: block;
+        padding-top: 1.5%;
+        margin-top: 615px;
+    }
+
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        padding: 30px;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3px;
+    }
+}
+
+
+
+
+
