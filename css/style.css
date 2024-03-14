@@ -1401,7 +1401,6 @@ a {
         padding-right: 0;
         align-items: center;
     }
-    
 }
 
 /* Pour l'Iphone SE */
@@ -1416,6 +1415,7 @@ a {
     height: 46px;
     font-size: 13px;
     }
+
 
     .input-with-icon {
         display: flex;
@@ -1549,7 +1549,6 @@ a {
         gap: 28px;
         align-items: center;
     }
-
     
     .hebergements-and-populaires {
         margin-bottom: 7%;
@@ -2190,7 +2189,7 @@ a {
 }
 
 /* Pour l'iPhone 12 Pro */
-@media only screen and (device-width: 390px) {
+@media only screen and (max-width: 390px) {
 
     .container-footer {
         height: 128px;
@@ -2200,9 +2199,22 @@ a {
         margin-top: 615px;
     }
 
+    .populaires {
+        width: 100%;
+        height: 600px;
+        margin-top: 80px;
+    }
+
     .texte-centre-ville {
         width: calc(75vw - 2px);
     }
+
+
+.main-recherche span {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
 
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color);
@@ -2217,8 +2229,8 @@ a {
     .main-container .hebergements {
         background-color: white;
         display: flex;
-        align-items: flex-start;
-        margin-right: 2%;
+        margin-right: 0;
+        margin-left: -8px;
     }
 
     .carte {
@@ -2271,9 +2283,9 @@ a {
         color: black;
         border: 2px solid #F2F2F2;
         margin-top: 15px;
-        width: 42%;
+        width: 43%;
         height: 46px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hebergements-cartes-gauche img {
@@ -2295,7 +2307,7 @@ a {
 
     .container-footer {
         height: 128px;
-        width: 388px;
+        width: 100%;
         display: block;
         padding-top: 1.5%;
         margin-top: 780px;
@@ -2308,12 +2320,28 @@ a {
             width: 90%;
         }
         
-      .assistance {
-         height: 100%;
-        padding: 20px;
-        background-color: #F2F2F2;
-        margin-top: 0px; 
-        width: 100%;
-        }      
+        .assistance {
+            height: 100%;
+            padding: 20px;
+            background-color: #F2F2F2;
+            margin-top: -15px;
+            width: 100%;
+        }    
 }
+
+@media only screen and (min-width: 359px) and (max-width: 360px) {
+
+    .texte-centre-ville {
+        width: calc(90vw - 2px);    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 281px) {
+
+    .texte-centre-ville {
+        width: calc(120vw - 2px);    }
+}
+
+
+
+
 
