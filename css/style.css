@@ -708,7 +708,6 @@ a {
     width: 369px;
     width: 274.67px;
     height: 146px;
-    gap: 15px;
 }
 
 .populaires {
@@ -727,13 +726,13 @@ a {
     padding: 20px 19px 20px 19px;
     gap: 17px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    flex-direction: none;
     justify-content: flex-start;
 }
 
 .container-footer {
     width: 925px;
     display: flex;
+    padding-top: 0;
 }
 
 .populaires-cards .card-subtitle {
@@ -872,6 +871,14 @@ a {
     margin-bottom: 10px;
     margin-right: 0;
     margin-left: 5px;
+    margin-top: 20px;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .container {
@@ -886,7 +893,6 @@ a {
     width: 111.67px;
     gap: 0px;
     border-radius: 20px 0px 0px 20px;
-    border: 5px 0px 5px 5px;
 }
 
 .main-container {
@@ -908,8 +914,12 @@ a {
     height: 167px;
     width: 100%;
     display: block;
-    padding-top: 1.5%;
-    margin-top: 940px;
+    padding-top: 0;
+    margin-top: 880px;
+}
+
+.conteneur-filter h3 {
+    margin-left: 10px;
 }
 
 .main-recherche h1 {
@@ -973,6 +983,12 @@ a {
     display: block;
     flex-direction: column;
     padding: 0;
+    margin-top: 40px;
+}
+
+#hebergementaom {
+    font-size: 22px;
+    margin-left: 20px;
 }
 
 .hebergements-cartes-gauche {
@@ -1061,7 +1077,7 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    padding: 30px;
+    padding: 10px;
     border-radius: 0;
     box-sizing: border-box;
     display: flex;
@@ -1296,7 +1312,7 @@ a {
     display: flex;
     position: relative;
     margin-left: -40px;
-    width: 320px;
+    width: 330px;
     margin-bottom: 0;
 }
 
